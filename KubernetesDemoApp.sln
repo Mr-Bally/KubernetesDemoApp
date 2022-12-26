@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KubernetesDemoApp", "KubernetesDemoApp\KubernetesDemoApp.csproj", "{BD5EDF8A-5510-4CE8-A5D6-5B1E38989C93}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobConsole", "JobConsole\JobConsole.csproj", "{E39785DF-1B88-4292-9B0F-22C2F8817F6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{72A40583-D591-4EA0-BE42-0D7438DF88F7}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.gitignore = .gitignore
+		Dockerfile-DemoApi.yml = Dockerfile-DemoApi.yml
+		Dockerfile-JobConsole.yml = Dockerfile-JobConsole.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD5EDF8A-5510-4CE8-A5D6-5B1E38989C93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD5EDF8A-5510-4CE8-A5D6-5B1E38989C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD5EDF8A-5510-4CE8-A5D6-5B1E38989C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD5EDF8A-5510-4CE8-A5D6-5B1E38989C93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E39785DF-1B88-4292-9B0F-22C2F8817F6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E39785DF-1B88-4292-9B0F-22C2F8817F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E39785DF-1B88-4292-9B0F-22C2F8817F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E39785DF-1B88-4292-9B0F-22C2F8817F6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD8B3B67-D070-4FE7-83B3-C0E2D800F45E}
+	EndGlobalSection
+EndGlobal

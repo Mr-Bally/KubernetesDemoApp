@@ -1,0 +1,16 @@
+{{- if .Values.role.create -}}
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  labels:
+    app: {{ template "demo-app.fullname" . }}
+    chart: {{ template "demo-app.chart" . }}
+    heritage: {{ .Release.Service }}
+    release: {{ .Release.Name }}
+  name: {{ template "demo-app.fullname" . }}
+  namespace: {{ .Release.Namespace }}
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
+{{- end -}}

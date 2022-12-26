@@ -1,0 +1,13 @@
+{{- if .Values.role.create -}}
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: {{ include "demo-app.roleBindingName" . }}
+subjects:
+- kind: ServiceAccount
+  name: {{ include "demo-app.serviceAccountName" . }}
+roleRef:
+  kind: Role
+  name: {{ include "demo-app.roleBindingName" . }}
+  apiGroup: ""
+{{- end }}
